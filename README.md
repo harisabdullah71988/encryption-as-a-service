@@ -60,3 +60,23 @@ A simple Flask-based API that provides AES256 encryption services with key versi
    Once the dependencies are installed, start the application by running:
    ```bash
    python app.py
+
+## Use the API
+
+Once the application is running, you can interact with the API to perform various actions such as creating services, encrypting/decrypting data, and managing key versions. 
+
+---
+
+## API Endpoints Overview
+
+The API provides several endpoints to create services, manage keys, and perform encryption/decryption. Here's a quick overview of each:
+
+- **POST /create_service**: Create a new service with a unique name and optional hardcoded IV.
+- **POST /<service_name>/update_key**: Generate a new key and IV for a specified service and track versioning.
+- **POST /<service_name>/encrypt**: Encrypt data using the service's key and IV.
+- **POST /<service_name>/decrypt**: Decrypt data using the service's key and IV.
+
+---
+
+
+
