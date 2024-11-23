@@ -114,7 +114,7 @@ def update_key(service_name):
 
 
 @app.route('/<service_name>/encrypt', methods=['POST'])
-def encrypt():
+def encrypt(service_name):
     """
     Encrypt data using the latest version of the AES key and IV for a service.
     Parameters:
@@ -152,7 +152,7 @@ def encrypt():
 
 
 @app.route('/<service_name>/decrypt', methods=['POST'])
-def decrypt():
+def decrypt(service_name):
     """
     Decrypt data using the latest version of the AES key and IV for a service.
     Parameters:
