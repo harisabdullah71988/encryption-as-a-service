@@ -1,4 +1,4 @@
-# AES256 Encryption Service API
+# Encryption As A Service
 
 A simple Flask-based API that provides AES256 encryption services with key versioning and secure storage.
 
